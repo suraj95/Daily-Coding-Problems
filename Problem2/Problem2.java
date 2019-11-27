@@ -17,7 +17,7 @@ class Problem2 {
 				ans = mid;
 				return ans; // just found the ans and return it
 			}
-			if (mmid*mid < n) {
+			if (mid*mid < n) {
 				// since we need to find floor, so we can consider this case for number which are not perfect square..
 				ans = mid;
 				start = mid+1; // make the search space reduce towards the left side... 
