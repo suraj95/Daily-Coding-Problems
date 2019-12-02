@@ -10,9 +10,11 @@ def arr_prod(l): #function definition for the problem
     prod = 1 #initializing a product variable
     for i in l:
         prod = prod*i #obtaining the product of the array
+        
     #creating an array of the size of given array 
     # with identical elements equal to the product
     fin_arr = [prod]*len(l) 
+    
     #dividing the product in fin_arr by element of arr
     fin_arr = [fin_arr[i]//l[i] for i in range(0, len(l))]
     return fin_arr
